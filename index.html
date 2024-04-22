@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="/flex.css" />  -->
+    <style>
+        .label {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 25px;
+            color: black;
+
+        }
+        .text {
+            height: 50px;
+            /* padding-top: 35px;
+            padding-bottom:35px; */
+            background: #ffffff;
+            filter: drop-shadow(0 0 0.75rem #cc3300); 
+            text-align: center;
+            word-wrap:break-word;
+            width:fit-content;
+            font-size: large;
+        }
+
+        #form {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            background: #b3b3b3;
+            padding: 25px;
+            font-size: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        #submit{
+            height: 50px;
+            width: 200px;
+            background-color: #FF4500;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: large;
+            color: #ffffff;
+            
+        }
+        #submit:hover{
+            background-color: #157201;
+            cursor: pointer;
+        } 
+        #outputContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background: #b3b3b3;
+        }
+       #output {
+        
+         width: 30%;
+         height: 200px;
+         margin-top: 25px;
+         background: #ffffff; 
+         filter: drop-shadow(0 0 0.75rem #cc3300);
+         
+
+        }
+        #tally {
+        margin-bottom: 60px;
+        height: 200px;
+         width: 30%; 
+         margin-top: 25px;
+         background: #ffffff; 
+         filter: drop-shadow(0 0 0.75rem #cc3300);
+
+        }
+        h3{
+            color: black;
+            padding: .5%
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body style=" background: #FF4500">
+   
+    
+    <div id="form">
+        
+        <form id="formText" style="width: 100%">
+            <label style="text-align: center" class="label" for="input">Input:</label><br><br>
+            <textarea style="text-align: center; padding: 20px;" cols="80" rows="4"  type="text" id="input" class="text" name="input" value="" ></textarea><br>
+            <input id="submit" type="submit"  value="Submit">
+        </form>
+       </div>
+        <div id="outputContainer">
+        
+        <h3> Output:</h3>
+        <div  id="output">
+    
+        
+        <p id="outputText">
+
+        </p>
+        </div>
+        <h3>Correction Tally:</h3>
+        <div id="tally">
+        
+        <p id="tallyText">
+
+        </p>
+        
+        </div> 
+        </div>
+    
+
+</body>
+
+</html>
+<script src="/script.js"></script>
